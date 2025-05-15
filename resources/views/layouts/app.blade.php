@@ -3,18 +3,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Saludo</title>
+    <title>hola desde el lienzo</title>
 </head>
 <body>
 
-    <h1>Hola a todos...</h1>
+     @include('includes.navbar')
 
-    <br>
-    <p>hola desde un parrafo..</p>
 
-    <label for="">Hola desde el label</label>
+     @yield('content')
+     
 
-    <input type="text">
+     @include('includes.footer')
+
+
 
 
 </body>
