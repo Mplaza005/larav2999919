@@ -11,4 +11,4 @@ Route::post('category/store', [CategoryController::class, 'store'])->name('categ
 Route::get('category/{category}', [CategoryController::class, 'show'])->name('category.show');
 Route::put('category/{category}',[CategoryController::class,'update'])->name('category.update');
 Route::delete('category/{category}',[CategoryController::class,'destroy'])->name('category.destroy');
-Route::get('curso/{category}/editar',[CategoryController::class,'edit'])->name('category.edit');
+Route::get('category/{category}/editar',[CategoryController::class,'edit'])->name('category.edit');
