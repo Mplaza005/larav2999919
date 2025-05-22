@@ -11,7 +11,27 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::all();
-        $users = User::all();
-        return view('category.index', compact('categories','users'));
+        return view('category.index', compact('categories'));
     }
+
+
+
+     public function create()
+      {
+        return view('category.create');
+      }
+
+     public function store(Request $request)
+    {
+
+         $category = new Category();
+         $category->name = $request->name;
+         $category->save();
+         return redirect()->route('category.index');
+
+
+    }
+
+
+
 }
